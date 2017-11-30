@@ -1,0 +1,566 @@
+
+#section-scheme {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #747b84;
+    position: relative;
+}
+.topPart {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 130px);
+    overflow:hidden;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    bottom: 0;
+    overflow:hidden;
+}
+#section-scheme .footer .skype-holder i, 
+#section-scheme .foot-text .foot-holder span,
+#section-scheme .foot-text .skype-holder a {
+    color: #394048;
+}
+.redCube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top:0;
+    right: 50%;
+    z-index: 1000;
+    background-image: url(../img/redCube.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.redCube a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+}
+.title {
+    position: absolute;
+    width: 51%;
+    height: 90px;
+    top:200px;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+.title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scheme-title.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    opacity: 0.1;
+    animation: 3s titleAppearance ease;
+}
+@keyframes titleAppearance {
+    0% {
+        top: 200px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.description {
+    position: absolute;
+    width: calc(50% - 200px);
+    height: 210px;
+    top:80px;
+    left:50%;
+    background-color: #525860;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 2;
+    animation: 3s descriptAdv ease;
+}
+@keyframes descriptAdv {
+    0% {
+        left: 150%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+.description p {
+    font-size: 14px;
+    font-family: RobotoLight, sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+}
+.cardBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 290px);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.card {
+    height: 50%;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    position: relative;
+}
+.number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 60px;
+    font-family: Bicubik, sans-serif;
+    opacity: .1;
+    color:#fff;
+}
+.card1 {
+    background-color: #f54657;
+}
+.card2{
+    background-color: #394048;
+}
+.card3{
+    background-color: #a8c61e;
+}
+.card4{
+    background-color: #12c5c7;
+}
+.card5{
+    background-color: #a8c61e;
+}
+.card6{
+    background-color: #12c5c7;
+}
+.card7{
+    background-color: #394048;
+}
+.card8{
+    background-color: #f54657;
+}
+.cardWrap {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    bottom: 90px;
+}
+.cardWrap .decor {
+    position: absolute;
+    top: 3;
+    bottom: 3;
+    left: 33px;
+    width: 3px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .decor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -33px;
+    width: 33px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .text {
+    padding-left: 60px;
+    padding-right: 25px;
+}
+.cardWrap .text h3 {
+    font-size: 18px;
+    font-family: Bicubik, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 0;
+    line-height: 30px;
+}
+.cardWrap .text h3 a.text-form {
+    color: #394048;
+    text-decoration: none;
+}
+.cardWrap .text h3 a.text-skype {
+    color: #12c5c7;
+    text-decoration: none;
+}
+.cardWrap .text p {
+    display: none;
+}
+.cardWrap .text span {
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    right: 20px;
+    font-size: 12px;
+    font-family: RobotoLight, sans-serif;
+    color: #394048;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.order {
+    width: 200px;
+    height: 80px;
+    box-sizing: border-box;
+}
+.divider {
+    background-color: #394048;
+}
+.skype-holder i {
+    font-size: 20px;
+}
+.mail-order {
+    left: 80px;
+}
+
+@media all and (max-height: 900px)   {
+    .topPart {
+        height: 860px;
+    }
+}
+
+@media all and (max-width: 1610px) {
+    .description p {
+        line-height: 20px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .foot-text {
+        width: 865px;
+    }
+    .skype-holder {
+        font-size: 12px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1350px) {
+    .phones {
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .redCube {
+        display: none;
+    }
+    .foot-text {
+        bottom: 40px;
+        display: flex;
+        height: 30px;
+        align-items: center;
+    }
+    .title {
+        width: 52%;
+    }
+    .description p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    @keyframes descriptAdv {
+        0% {
+            left: 200%;
+        }
+        100% {
+            left: 50%;
+        }
+    }
+    .cardWrap .text h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .topPart {
+        height: 880px;
+    }
+    .description {
+        width: 100%;
+        left: 0;
+        top: 190px;
+        height: 65px;
+        padding-top: 10px;
+    }
+    @keyframes descriptAdv {
+        0% {
+            left: 200%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    .cardBox {
+        height: calc(100% - 255px);
+    }
+    .title {
+        width: 67%;
+        height: 90px;
+        top: 100px;
+    }
+}
+
+@media all and (max-height: 900px) and (max-width: 1280px)  {
+    .topPart {
+        height: 880px;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .policy-links {
+        bottom: 10px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .topPart {
+        height: 1100px;
+    }
+    .card {
+        height: 33.3333333%;
+    }
+    .cardWrap {
+        bottom: 50px;
+    }
+    .cardWrap .text h3 {
+        line-height: 20px;
+    }
+    .cardWrap .text span {
+        bottom: -43px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .policy-links a {
+        font-size: 8px;
+    }
+    .policy-links {
+        bottom: 15px;
+        right: 20px;
+        width: 640px;
+    }
+    .foot-text {
+        bottom: 40px;
+        height: 20px;
+        right: 20px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .topPart {
+        height: 1300px;
+    }
+    .col-sm-6 {
+        width: 33.3333333%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .title {
+        top: 115px;
+        width: 80%;
+        height: 45px;
+    }
+    .description {
+        top: 160px;
+        height: 100px;
+    }
+    .cardBox {
+        height: calc(100% - 260px);
+    }
+    .cardWrap .text h3 {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .topPart {
+        height: 1030px;
+    }
+    .mail-order {
+        left: 20px;
+    }
+    .footer .foot-text {
+        bottom: 50px;
+        width: 435px;
+    }
+    .policy-links {
+        display: block;
+        text-align:right;
+        bottom: 30px;
+    }
+    .policy-links a:nth-child(3) {
+        display: block;
+        line-height: 20px;
+    }
+    .phones {
+        padding-top: 15px;
+    }
+    .cardWrap .text span {
+        font-size: 9px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .description {
+        height: 110px;
+    }
+    .cardBox {
+        height: calc(100% - 270px);
+    }
+    .policy-links {
+        height: 40px;
+        bottom: 20px;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .topPart {
+        height: 1495px;
+    }
+    .card {
+        height:25%;
+    }
+    .cardWrap {
+        bottom: 50px;
+    }
+    .cardWrap .text span {
+        bottom: -45px;
+    }
+    .mail-order {
+        left: 0px;
+    }
+    .policy-links {
+        width: calc(100% - 40px);
+        bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .policy-links a {
+        letter-spacing: 1px;
+    }
+    .policy-links a:nth-child(3) {
+        line-height: 10px;
+    }
+    .footer .foot-text {
+        bottom: 15px;
+        width: 310px;
+    }
+    .skype-holder {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .topPart {
+        height: 1080px;
+    }
+    .card5{
+        background-color: #394048;
+    }
+    .card6{
+        background-color: #a8c61e;
+    }
+    .card7{
+        background-color: #f54657;
+    }
+    .card8{
+        background-color: #394048;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .col-sm-6 {
+        width: 100%;
+    }
+    .order {
+        font-size: 8px;
+    }
+    .title {
+        width: 100%;
+    }
+    .description {
+        height: 230px;
+        padding-top: 20px;
+    }
+    .description p {
+        font-size: 12px;
+    }
+    .topPart {
+        height: 1645px;
+    }
+    .cardBox {
+        height: calc(100% - 390px);
+    }
+    .card {
+        height: 12.2%;
+    }
+    .cardWrap {
+        top:-15px;
+        bottom: auto;
+    }
+    .cardWrap .text h3 {
+        font-size: 14px;
+    }
+    .cardWrap .text p {
+        font-size: 14px;
+    }
+    button.order {
+        width: 85px;
+        box-sizing: border-box;
+        padding: 25px 0;
+    }
+    .footer .foot-text {
+        bottom:53px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        padding: 0;
+    }
+    .policy-links {;
+        bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .skype-holder a {
+        margin-left: 5px;
+    }
+    .card6{
+        min-height: 180px;
+    }
+    .cardWrap .text span {
+        bottom: -55px;
+    }
+    .number {
+        width: 30px;
+        font-size: 30px;
+        right: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    button.order {
+        height: 60px;
+    }
+}
