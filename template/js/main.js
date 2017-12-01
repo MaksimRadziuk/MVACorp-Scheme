@@ -322,15 +322,11 @@ $(document).ready(function(){
         $(".card1").delay(0).animate({opacity: "1"}, 1000);
         $(".card5").delay(200).animate({opacity: "1"}, 1000);
         $(".card2").delay(400).animate({opacity: "1"}, 1000);
-        $(".card9").delay(600).animate({opacity: "1"}, 1000);
-        $(".card6").delay(800).animate({opacity: "1"}, 1000);
-        $(".card3").delay(1000).animate({opacity: "1"}, 1000);
-        $(".card10").delay(1200).animate({opacity: "1"}, 1000);
-        $(".card7").delay(1400).animate({opacity: "1"}, 1000);
-        $(".card4").delay(1600).animate({opacity: "1"}, 1000);
-        $(".card11").delay(1800).animate({opacity: "1"}, 1000);
-        $(".card8").delay(2000).animate({opacity: "1"}, 1000);
-        $(".card12").delay(2200).animate({opacity: "1"}, 1000);
+        $(".card6").delay(600).animate({opacity: "1"}, 1000);
+        $(".card3").delay(800).animate({opacity: "1"}, 1000);
+        $(".card7").delay(1000).animate({opacity: "1"}, 1000);
+        $(".card4").delay(1200).animate({opacity: "1"}, 1000);
+        $(".card8").delay(1400).animate({opacity: "1"}, 1000);
     }
 
     if(window.innerWidth > 680){
@@ -340,12 +336,8 @@ $(document).ready(function(){
         $(".card7").delay(600).animate({opacity: "1"}, 1000);
         $(".card5").delay(800).animate({opacity: "1"}, 1000);
         $(".card3").delay(1000).animate({opacity: "1"}, 1000);
-        $(".card10").delay(1200).animate({opacity: "1"}, 1000);
-        $(".card8").delay(1400).animate({opacity: "1"}, 1000);
-        $(".card6").delay(1600).animate({opacity: "1"}, 1000);
-        $(".card11").delay(1800).animate({opacity: "1"}, 1000);
-        $(".card9").delay(2000).animate({opacity: "1"}, 1000);
-        $(".card12").delay(2200).animate({opacity: "1"}, 1000);
+        $(".card8").delay(1200).animate({opacity: "1"}, 1000);
+        $(".card6").delay(1400).animate({opacity: "1"}, 1000);
     }
 
     if(window.innerWidth > 319){
@@ -357,10 +349,6 @@ $(document).ready(function(){
         $(".card6").delay(1000).animate({opacity: "1"}, 1000);
         $(".card7").delay(1200).animate({opacity: "1"}, 1000);
         $(".card8").delay(1400).animate({opacity: "1"}, 1000);
-        $(".card9").delay(1600).animate({opacity: "1"}, 1000);
-        $(".card10").delay(1800).animate({opacity: "1"}, 1000);
-        $(".card11").delay(2000).animate({opacity: "1"}, 1000);
-        $(".card12").delay(2200).animate({opacity: "1"}, 1000);
     }
 
 });
