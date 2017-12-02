@@ -147,9 +147,15 @@ button {
     margin: 0 20px;
 }
 .skype-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     font-size: 12px;
     text-transform:uppercase;
     letter-spacing: 2px;
