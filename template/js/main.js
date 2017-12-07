@@ -27,7 +27,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    if(window.innerHeight > 899 && window.innerWidth > 1023){
+    if(window.innerHeight > 900){
 
 		$(".close-cookies").click(function() {
 			$('.cookie-branch').hide();
